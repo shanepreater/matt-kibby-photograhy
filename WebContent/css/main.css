@@ -29,6 +29,6 @@ body {
 /* Make sure the thumbnails are scaled correctly
  *-------------------------------------------------*/
 img.thumbnail {
-	width: 171px;
-	height: 180px;
+	width: 242px;
+	height: 200px;
 }
