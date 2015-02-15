@@ -1,0 +1,21 @@
+/* Sticky footer styles
+ * This will make the footer float at the bottom of 
+ * the page even if the page is less than the 
+ * full screen.
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #f5f5f5;
+}
