@@ -2,7 +2,7 @@
  * This will make the footer float at the bottom of 
  * the page even if the page is less than the 
  * full screen.
--------------------------------------------------- */
+ *------------------------------------------------ */
 html {
   position: relative;
   min-height: 100%;
@@ -24,4 +24,11 @@ body {
 #footer .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+/* Make sure the thumbnails are scaled correctly
+ *-------------------------------------------------*/
+img.thumbnail {
+	width: 171px;
+	height: 180px;
 }

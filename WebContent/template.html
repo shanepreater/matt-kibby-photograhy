@@ -69,6 +69,7 @@
 			<li data-target="#myCarousel" data-slide-to="4"></li>
 		</ol>
 		<div class="carousel-inner" role="listbox">
+			<!-- This is the start of an item in the carousel -->
 			<div class="item active">
 				<img src="./images/barn-owlprint.jpg" alt="Barn Owl in flight">
 				<div class="container-fluid">
@@ -81,6 +82,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- End of the carousel item. -->
 			<div class="item">
 				<img src="./images/couplecuddle.jpg" alt="Intimate moments">
 				<div class="container-fluid">
@@ -143,11 +145,11 @@
 	<!-- Lets make the page have 2 columns (in bootstrap the page is 12 units wide so we can split this up
 	     to allow us to have them  -->
 	<div id="mainContent" class="row">
-		<div id="left-area" class="col-md-8" aria-role="main">
+		<div id="left-area" class="col-md-8" role="main">
 			<h2>Left title here</h2>
 			<p>Left hand content here.</p>
 		</div>
-		<div id="right-area" class="col-md-4" aria-role="complementary">
+		<div id="right-area" class="col-md-4" role="complementary">
 			<h2>Right Title Here</h2>
 			<p>Right Hand content here.</p>
 		</div>
