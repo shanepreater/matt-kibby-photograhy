@@ -2,9 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification"
-	content="google-site-verification=m18FkEfYg6_KeG1Ge5B7ihVJrkCihore3AVfu2P2rbI" />
-<title>Matt Kibby Photography - template</title>
+<title>Matt Kibby Photography</title>
 <!--  Include Twitters bootstrap CSS so that we have some nice defaults. Look at www.getbootstrap.com for more on this. -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -19,7 +17,7 @@
     <![endif]-->
 </head>
 <body class="container-fluid">
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<nav class="navbar navbar-inverse navbar-static-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
@@ -33,11 +31,8 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<!-- Each page you create you need to update this area with the new item on EVERY page. 
-              	     Also the page you created should have it's link set to active.
-              	     so <li class="active"><a href="newpage">blah.html</a></li>
-              	      -->
-					<li><a href="./index.html">Home</a></li>
+					<!-- Each page you create you need to update this area with the new item on EVERY page. Also the page you created should have it's link set to active -->
+					<li class="active"><a href="./index.html">Home</a></li>
 					<li class="dropdown"><a href="portfolio"
 						class="dropdown-toggle" data-toggle="dropdown" role="button"
 						aria-expanded="false">Portfolio <span class="caret"></span></a>
@@ -58,8 +53,7 @@
 	</nav>
 
 	<!-- Carousel for the highlihgted images that you want to show. -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel"
-		role="banner">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators - This shows which image is currently active. -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -140,16 +134,31 @@
 		</a>
 	</div>
 
-	<!-- Lets make the page have 2 columns (in bootstrap the page is 12 units wide so we can split this up
-	     to allow us to have them  -->
+	<!-- Lets make the page have 2 columns (in bootstrap the page is 12 units wide so we can split this up to allow us to have them  -->
 	<div id="mainContent" class="row">
 		<div id="left-area" class="col-md-8" aria-role="main">
-			<h2>Left title here</h2>
-			<p>Left hand content here.</p>
+			<h2>All about me</h2>
+			<p>This website is designed to show off my skills as a
+				photographer and designer. I discovered photography around three
+				years ago and haven’t looked back since. My design skills and thirst
+				for knowledge are constantly evolving alongside my photography.
+				Adobe Photoshop became a friend of mine very quickly, and has been a
+				great source of inspiration, helping me to regain focus on my
+				artistic flair. I am always looking to build on my skills and am
+				always playing with new software, InDesign, Illustrator and now
+				WordPress.</p>
+			<p>
+				Take a look around and see what I get up to, and by all means feel
+				free to get in touch via my <a href="contact.html">contact page</a>.
+			</p>
 		</div>
 		<div id="right-area" class="col-md-4" aria-role="complementary">
-			<h2>Right Title Here</h2>
-			<p>Right Hand content here.</p>
+			<h2>About Matt Kibby</h2>
+			<p>Matt Kibby is an engaging and talented photographer. His eye
+				for detail and scene setting are second to none.</p>
+			<p>Whatever the occasion. Which ever moment you want to remember
+				for the rest of your days.</p>
+			<p>Let Matt Kibby help encase that moment for time immemorial.</p>
 		</div>
 	</div>
 
