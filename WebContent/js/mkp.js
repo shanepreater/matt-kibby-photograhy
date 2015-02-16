@@ -9,7 +9,7 @@
 	//Define the routes (bookmarkable pages which will be in the site.
 	app.config(['$routeProvider', function($routeProvider) {
 	    $routeProvider.
-	    	when('/', {
+	    	when('/home', {
 	    		templateUrl: 'views/home.html',
 	    		controller: 'HomeController',
 	    		controllerAs: 'homeController'
@@ -23,7 +23,7 @@
 	        controllerAs: 'albumController'
 	      }).
 	      otherwise({
-	        redirectTo: '/'
+	        redirectTo: '/home'
 	      });
 	  }   
 	]);
