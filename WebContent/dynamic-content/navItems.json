@@ -1,0 +1,11 @@
+[
+	{"pageName" : "home","pageTitle" : "Home","active" : true},
+	{"pageName" : "portfolio", "pageTitle" : "Portfolio", "childPages" : [
+			{"pageName" : "portfolio/weddings", "pageTitle" : "Weddings"}, 
+			{"pageName" : "portfolio/portraits", "pageTitle" : "Portraits"}, 
+			{"pageName" : "portfolio/newborn", "pageTitle" : "New born", "new" : true}, 
+			{"pageName" : "portfolio/wildlife", "pageTitle" : "Wild life"}, 
+			{"pageName" : "portfolio/art", "pageTitle" : "Artwork"}
+	]},
+	{"pageName" : "contact", "pageTitle" : "Contact"}
+]

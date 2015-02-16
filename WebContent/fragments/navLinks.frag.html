@@ -1,0 +1,34 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Matt Kibby Photography</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li ng-repeat="navLink in navLinks"  ng-class="{active: controller.isActivePage(navLink.pageName), dropdown: navLink.childPages}">
+						<a ng-if="!controller.hasChildren(navLink)" href ng-click="controller.setActivePage(navLink.pageName)">{{navLink.pageTitle}}</a>
+						<a ng-if="controller.hasChildren(navLink)" 
+						   href="{{navLink.pageName}}" 
+						   class="dropdown-toggle" 
+						   data-toggle="dropdown" 
+						   role="button" 
+						   aria-expanded="false">{{navLink.pageTitle}} <span class="caret"></span></a>
+						<ul ng-if="controller.hasChildren(navLink)"
+						    class="dropdown-menu" role="menu">
+						    <li ng-repeat="childNavItem in navLink.childPages" 
+						    	ng-class="{active: controller.isActivePage(childNavItem.pageName)}">
+						    	<a href ng-click="controller.setActivePage(childNavItem.pageName)">{{childNavItem.pageTitle}}</a>
+						    </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>

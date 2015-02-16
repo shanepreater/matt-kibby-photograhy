@@ -1,0 +1,36 @@
+<!-- Carousel for the highlihgted images that you want to show. -->
+<!-- {{controller.carouselItems()}} -->
+	<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators - This shows which image is currently active. -->
+		<ol class="carousel-indicators">
+			<!-- we are looping the list here and also below to get the right links set up. -->
+			<li data-target="#myCarousel" 
+				ng-repeat="carouselItem in items"
+				ng-class="{active : carouselItem.active}" 
+				ng-click="controller.setActiveImage($index)"></li> 
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<!-- We are going to loop over each item in the carousel list and put the various items in the correct places. -->
+			<div ng-class="{item : true, active : carouselItem.active}" 
+				 ng-repeat="carouselItem in items">
+				<img ng-src="images/{{carouselItem.src}}" alt="{{carouselItem.title}}">
+				<div class="container-fluid">
+					<div class="carousel-caption">
+						<h1>{{carouselItem.caption}}</h1>
+						<p>
+							<a class="btn btn-lg btn-primary"
+								href 
+								ng-click="setActivePage(carouselItem.detailLink)" 
+								role="button">Learn more</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href ng-click="controller.previousImage()" class="left carousel-control" data-target="#Carousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href ng-click="controller.nextImage()" class="right carousel-control" data-target="#Carousel" data-slide="next">
+		   <span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>

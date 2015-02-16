@@ -1,165 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Matt Kibby Photography</title>
-<!--  Include Twitters bootstrap CSS so that we have some nice defaults. Look at www.getbootstrap.com for more on this. -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- Add our own site specific CSS to the end of the list so we can make use of the more generic styles in our markup. -->
-<link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title for the page. Remember this is a Single page rich internet app so there is actually only one page. -->
+	<title>Matt Kibby Photography</title>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<!--  Include Twitters bootstrap CSS so that we have some nice defaults. Look at www.getbootstrap.com for more on this. -->
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- Add our own site specific CSS to the end of the list so we can make use of the more generic styles in our markup. -->
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="container-fluid">
-	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="./index.html">Matt Kibby Photography</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<!-- Each page you create you need to update this area with the new item on EVERY page. Also the page you created should have it's link set to active -->
-					<li class="active"><a href="./index.html">Home</a></li>
-					<li class="dropdown"><a href="portfolio"
-						class="dropdown-toggle" data-toggle="dropdown" role="button"
-						aria-expanded="false">Portfolio <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="./portfolio/weddings.html">Weddings</a></li>
-							<li><a href="./portfolio/portraits.html">Portraits</a></li>
-							<li><a href="./portfolio/newborn.html"><span
-									class="label label-default">New</span> New born</a></li>
-							<li><a href="./portfolio/wildlife.html">Wild life</a></li>
-							<li><a href="./portfolio/art.html">Artwork</a></li>
-							<li><a href="#">Something else here</a></li>
-						</ul>
-					</li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<!-- Carousel for the highlihgted images that you want to show. -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators - This shows which image is currently active. -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-			<li data-target="#myCarousel" data-slide-to="4"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="./images/barn-owlprint.jpg" alt="Barn Owl in flight">
-				<div class="container-fluid">
-					<div class="carousel-caption">
-						<h1>Stunning wildlife pictures.</h1>
-						<p>
-							<a class="btn btn-lg btn-primary"
-								href="./portfolio/wildlife.html" role="button">Learn more</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="./images/couplecuddle.jpg" alt="Intimate moments">
-				<div class="container-fluid">
-					<div class="carousel-caption">
-						<h1>Intimate moments</h1>
-						<p>
-							<a class="btn btn-lg btn-primary"
-								href="./portfolio/weddings.html" role="button">Learn more</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="./images/feet.jpg" alt="Little miracles">
-				<div class="container-fluid">
-					<div class="carousel-caption">
-						<h1>Grand additions</h1>
-						<p>
-							<a class="btn btn-lg btn-primary" href="./portfolio/newborn.html"
-								role="button">Learn more</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="./images/foodshop.jpg" alt="Urban art">
-				<div class="container-fluid">
-					<div class="carousel-caption">
-						<h1>Contemporary artwork</h1>
-						<p>
-							<a class="btn btn-lg btn-primary" href="./portfolio/art.html"
-								role="button">Learn more</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="./images/wedding-shoes.jpg" alt="Magical memories">
-				<div class="container-fluid">
-					<div class="carousel-caption">
-						<h1>Those little moments</h1>
-						<p>
-							<a class="btn btn-lg btn-primary"
-								href="./portfolio/weddings.html" role="button">Learn more</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button"
-			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
-			aria-hidden="true"></span> <span class="sr-only">Previous</span>
-		</a> <a class="right carousel-control" href="#myCarousel" role="button"
-			data-slide="next"> <span
-			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
+<!-- Look for the ng-XXX attributes. These are markers to let Angular (JS framework) dynamically update parts of the page. -->
+<body class="container-fluid"  ng-app="mkp">
+	<div id="navigation" navigation-links>
+		<!-- Navigation will be put in here. -->
 	</div>
-
-	<!-- Lets make the page have 2 columns (in bootstrap the page is 12 units wide so we can split this up to allow us to have them  -->
-	<div id="mainContent" class="row">
-		<div id="left-area" class="col-md-8" aria-role="main">
-			<h2>All about me</h2>
-			<p>This website is designed to show off my skills as a
-				photographer and designer. I discovered photography around three
-				years ago and haven’t looked back since. My design skills and thirst
-				for knowledge are constantly evolving alongside my photography.
-				Adobe Photoshop became a friend of mine very quickly, and has been a
-				great source of inspiration, helping me to regain focus on my
-				artistic flair. I am always looking to build on my skills and am
-				always playing with new software, InDesign, Illustrator and now
-				WordPress.</p>
-			<p>
-				Take a look around and see what I get up to, and by all means feel
-				free to get in touch via my <a href="contact.html">contact page</a>.
-			</p>
-		</div>
-		<div id="right-area" class="col-md-4" aria-role="complementary">
-			<h2>About Matt Kibby</h2>
-			<p>Matt Kibby is an engaging and talented photographer. His eye
-				for detail and scene setting are second to none.</p>
-			<p>Whatever the occasion. Which ever moment you want to remember
-				for the rest of your days.</p>
-			<p>Let Matt Kibby help encase that moment for time immemorial.</p>
-		</div>
+	
+	<div class="page" ng-view>
+		<!-- Content for each view (page but not really as the website is actually only one page which is changed dynamically) -->
 	</div>
 
 	<!-- Last we will put in a floating footer which should hang around at the bottom of the visible area. -->
@@ -184,5 +53,14 @@
 	<!-- Main bootstrap javascript to make the various cute actions work. -->
 	<script
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-route.js"></script>
+	
+	<!--  include our javascript files -->
+   	<script src="js/mkp.js"></script>
+   	<script src="js/mkp-nav.js"></script>
+   	<script src="js/mkp-carousel.js"></script>
+   	<script src="js/mkp-home.js"></script>
 </body>
 </html>
