@@ -14,16 +14,14 @@
 	    		controller: 'HomeController',
 	    		controllerAs: 'homeController'
 	    	}).
-	      /*when('/contact', {
-	        templateUrl: 'views/contact.html',
-	        controller: 'ContactController',
-	        controllerAs: 'contactController'
+	      when('/contact', {
+	        templateUrl: 'views/contact.html'
 	      }).
 	      when('/portfolio/:album', {
 	        templateUrl: 'views/album.html',
 	        controller: 'AlbumController',
 	        controllerAs: 'albumController'
-	      }).*/
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
