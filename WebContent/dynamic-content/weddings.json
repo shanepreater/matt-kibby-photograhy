@@ -1,0 +1,54 @@
+{
+	"title" : "Weddings",
+	"description" : "Art means so many things to so many people. Art for me is combining my love of photography with digital software. I became hooked on Adobe Photoshop whilst learning to finely tune my photographs. The capabilities allow for pretty much anything to be created, the only boundaries are skills and imagination, both can always be expanded and always lead to new ideas and methods. Although this is a service I do not currently provide I love working for a local photographer  <a href=\"http://www.johnholbrookphotography.co.uk/\">John Holbrook Photography</a> as a second shooter,  gaining valuable experience in all aspects of photography and customer service.",
+	"images" : [
+		{
+			"src" : "1.jpg",
+			"title" : "Wedding 1"
+		},
+		{
+			"src" : "10.jpg",
+			"title" : "Wedding 2"
+		},
+		{
+			"src" : "2.jpg",
+			"title" : "Wedding 3"
+		},
+		{
+			"src" : "22.jpg",
+			"title" : "Wedding 4"
+		},
+		{
+			"src" : "27.jpg",
+			"title" : "Wedding 5"
+		},
+		{
+			"src" : "3.jpg",
+			"title" : "Wedding 6"
+		},
+		{
+			"src" : "4.jpg",
+			"title" : "Wedding 7"
+		},
+		{
+			"src" : "47.jpg",
+			"title" : "Wedding 8"
+		},
+		{
+			"src" : "56.jpg",
+			"title" : "Wedding 9"
+		},
+		{
+			"src" : "6.jpg",
+			"title" : "Wedding 10"
+		},
+		{
+			"src" : "7.jpg",
+			"title" : "Wedding 11"
+		},
+		{
+			"src" : "8.jpg",
+			"title" : "Wedding 12"
+		}
+	]
+}

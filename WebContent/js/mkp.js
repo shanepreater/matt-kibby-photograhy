@@ -4,7 +4,7 @@
 // Don't worry about this it's a namespace wrapper to ensure that we don't bleed
 // names of variables all over the place. You will probably see this alot.
 (function() {
-	var app = angular.module("mkp", ["ngRoute", "home", "navigation"]);
+	var app = angular.module("mkp", ["ngRoute", "home", "navigation", "album"]);
 	
 	//Define the routes (bookmarkable pages which will be in the site.
 	app.config(['$routeProvider', function($routeProvider) {

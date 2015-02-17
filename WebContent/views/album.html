@@ -1,0 +1,19 @@
+<div id="mainContent">
+	<h2>{{album.title}}</h2>
+	<p ng-bind-html="album.description"></p>
+	<div class="row album">
+
+		<div class="col-xs-6 col-md-3">
+			<img class="thumbnail" ng-repeat="image in album.images[0]" ng-src="images/{{albumName}}/{{image.src}}" alt="{{image.title}}">
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<img class="thumbnail" ng-repeat="image in album.images[1]" ng-src="images/{{albumName}}/{{image.src}}" alt="{{image.title}}">
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<img class="thumbnail" ng-repeat="image in album.images[2]" ng-src="images/{{albumName}}/{{image.src}}" alt="{{image.title}}">
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<img class="thumbnail" ng-repeat="image in album.images[3]" ng-src="images/{{albumName}}/{{image.src}}" alt="{{image.title}}">
+		</div>
+	</div>
+</div>
